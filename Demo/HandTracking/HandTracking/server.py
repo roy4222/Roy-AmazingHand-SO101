@@ -77,20 +77,30 @@ class AmazingHandServicer:
         #     }
         # ]
 
-        def modulation_z_coeff(
-            min_value: float, max_value: float, value: float
+        def modulation_coeff(
+            min_value: float,
+            max_value: float,
+            min_value_goal: float,
+            max_value_goal: float,
+            value: float,
         ) -> float:
-            a = 1 / (min_value - max_value)
-            b = max_value / (max_value - min_value)
+            a = (max_value_goal - min_value_goal) / (max_value - min_value)
+            b = (min_value_goal * max_value - max_value_goal * min_value) / (
+                max_value - min_value
+            )
             return a * value + b
 
-        if request.right_hand.thumb.y > 0.06:
-            print("Adjusting thumb extension...", request.right_hand.thumb.z)
-            request.right_hand.thumb.z *= modulation_z_coeff(
-                0.06, 0.1, request.right_hand.thumb.y
+        if request.right_hand.index_pinch.pinch_value < 0.5:
+            request.right_hand.thumb.z *= modulation_coeff(
+                0.5, 0, 1, 0.5, request.right_hand.index_pinch.pinch_value
             )
-            request.right_hand.thumb.x = max(request.right_hand.thumb.x, 0.05)
-            print("New thumb z:", request.right_hand.thumb.z)
+            request.right_hand.thumb.x += modulation_coeff(
+                0.5, 0, 0, 0.05, request.right_hand.index_pinch.pinch_value
+            )
+            if request.right_hand.thumb.y < 0.0:
+                request.right_hand.thumb.x += modulation_coeff(
+                    0, -0.01, 0, -0.05, request.right_hand.thumb.y
+                )
 
         r_res = [
             {
@@ -116,19 +126,6 @@ class AmazingHandServicer:
                 ],
             }
         ]
-
-        def modulation(max_mod: float, value: float) -> float:
-            return max_mod * value
-
-        # r_res[0]["r_tip1"][2] = r_res[0]["r_tip1"][2] + modulation(
-        #     -0.03, request.right_hand.index_pinch.pinch_value
-        # )
-        # r_res[0]["r_tip4"][2] = r_res[0]["r_tip4"][2] + modulation(
-        #     0.03, request.right_hand.index_pinch.pinch_value
-        # )
-        # r_res[0]["r_tip4"][0] = r_res[0]["r_tip4"][0] + modulation(
-        #     -0.02, request.right_hand.index_pinch.pinch_value
-        # )
 
         # l_res = [
         #     {
@@ -205,7 +202,7 @@ def main() -> None:
 
     amazing_hand_servicer = AmazingHandServicer()
     amazing_hand_servicer._register_to_server(server)
-    server.add_insecure_port("[::]:50077")
+    server.add_insecure_port("[::]:50087")
     server.start()
     server.wait_for_termination()
 
