@@ -253,7 +253,7 @@ def main() -> None:
     low_filter = LowPassActionFilter(control_freq=150.0)
     amazing_hand_servicer = AmazingHandServicer(low_filter)
     amazing_hand_servicer._register_to_server(server)
-    server.add_insecure_port("[::]:50070")
+    server.add_insecure_port("[::]:50065")
     server.start()
     server.wait_for_termination()
 

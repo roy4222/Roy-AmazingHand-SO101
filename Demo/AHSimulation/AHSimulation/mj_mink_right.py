@@ -344,6 +344,35 @@ class Client:
                 z.as_py(),
             ]
 
+        # if "r_tip1" in hand[0]:
+        #     [x, y, z] = hand[0]["r_tip1"].values
+        #     self.data.mocap_pos[0] = [
+        #         x.as_py() * 1.5 - 0.025,
+        #         y.as_py() * 1.5 + 0.022,
+        #         z.as_py() * 1.5 + 0.098,
+        #     ]
+        # if "r_tip2" in hand[0]:
+        #     [x, y, z] = hand[0]["r_tip2"].values
+        #     self.data.mocap_pos[1] = [
+        #         x.as_py() * 1.5 - 0.025,
+        #         y.as_py() * 1.5 - 0.009,
+        #         z.as_py() * 1.5 + 0.092,
+        #     ]
+        # if "r_tip3" in hand[0]:
+        #     [x, y, z] = hand[0]["r_tip3"].values
+        #     self.data.mocap_pos[2] = [
+        #         x.as_py() * 1.5 - 0.025,
+        #         y.as_py() * 1.5 - 0.040,
+        #         z.as_py() * 1.5 + 0.082,
+        #     ]
+        # if "r_tip4" in hand[0]:
+        #     [x, y, z] = hand[0]["r_tip4"].values
+        #     self.data.mocap_pos[3] = [
+        #         x.as_py() * 1.5 + 0.024,
+        #         y.as_py() * 1.5 + 0.019,
+        #         z.as_py() * 1.5 + 0.017,
+        #     ]
+
     def write_mocap_quat(self, hand):
         # please, a method to access the mocap objects by name...
 
