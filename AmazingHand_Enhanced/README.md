@@ -29,7 +29,7 @@ In return, its price will also increase… but will still remain reasonable comp
 
 ## Table of contents
 
-- [Modifications](#modifications)
+- [Build Ressources](#build-ressources)
     - [BOM (Bill Of Materials)](#bom-bill-of-materials)
     - [CAD Files and Onshape document](#cad-files-and-onshape-document)
     - [Assembly Step](#assembly-steps)
