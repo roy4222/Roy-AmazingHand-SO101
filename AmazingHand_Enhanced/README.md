@@ -51,7 +51,7 @@ List of all needed components is available here:  [AmazingHand_Enhanced BOM](htt
 
 ## CAD Files and Onshape document
 
-
+![3DPrintedParts](assets/Enhanced_3Dprinted_parts.jpg)
 
 
 All fingers parts are the same for both versions : Proximal / Distal / Gimbal / Link / Finger shells
