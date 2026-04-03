@@ -24,7 +24,11 @@ Based on Amazing Hand initial project, here is an update with new motors which w
 
 Thanks to the use of Feetech STS3032 motors, Amazing Hand Enhanced pushes the boundaries of the original version.
 
-https://github.com/user-attachments/assets/4253e112-d809-4588-8c8a-1002693c89ec
+
+
+https://github.com/user-attachments/assets/ebd0ca92-6702-45f6-a8de-ba2e1d7e80ca
+
+
 
 In return, its price will also increase… but will still remain reasonable compared to most other robotic hands available !
 
