@@ -14,7 +14,6 @@ Mechanical design is licensed under a:
 # Amazing Hand Enhanced 
 
 
-
 Based on Amazing Hand initial project, here is an update with new motors which will offer :
 - Full backdrivability
 - Better accuracy
@@ -52,14 +51,18 @@ List of all needed components is available here:  [AmazingHand_Enhanced BOM](htt
 
 ## CAD Files and Onshape document
 
-All fingers parts are the same for both version : Proximal / Distal / Gimbal / Link / Finger shells
+
+
+
+All fingers parts are the same for both versions : Proximal / Distal / Gimbal / Link / Finger shells
 
 => Please refer to original version for all these parts [here](https://github.com/pollen-robotics/AmazingHand/tree/main/cad) 
+
 
 Specific parts for Amazing Hand Enhanced :
 - Finger frame part 1 & 2 become Finger frame (only 1 part)
 - Custom servo horn is needed, to be 3D printed
-- Hand Plate / Wrist interface / Palm shell & Top shell are slightly differen (due to custom servo horn and increased servo thickness)
+- Hand Plate / Wrist interface / Palm shell & Top shell are slightly different (due to custom servo horn and increased servo thickness)
 
 => Specific STL and Steps files for Amazing Hand Enhanced can be found [here](https://github.com/pollen-robotics/AmazingHand/tree/Amazing-Hand-Enhanced/AmazingHand_Enhanced/cad) 
 
@@ -78,6 +81,8 @@ Assembly guide for the Amazing Hand Enhanced in combination with standard compon
 ![Assembly Guide](Docs/AmazingHand-Enhanced_Assembly.pdf) 
 ![Assembly_example](assets/Assembly_Enhanced.jpg)   
 
+(some pictures are not updated with new motors, because they are the same for both versions)
+
 In addition, a very annoying ultrasound could be heard by some of you, because of the pwm frequency set to 16KHz by defaut. This frequency could be changed to 24KHz by modifying the register 18 "seting byte" to 44, and save (using feetech software). This may need a servo reboot to be applied then.
 ![PWM frequency](assets/PWM-frequency.jpg)
 
@@ -89,6 +94,8 @@ A basic demo is available with both Python.
 - Python script: "AmazingHand_Demo.py" [here](https://github.com/pollen-robotics/AmazingHand/tree/Amazing-Hand-Enhanced/AmazingHand_Enhanced/PythonExample)
 
 You can use an external 6V / 2A power supply for these motors.
+Check on the BOM list:
+[AmazingHand-Enhanced BOM](https://docs.google.com/spreadsheets/d/180ta_jQhF-YGHinabTnSPGtvGcQORVJ9lFrNiKcSqUE/edit?gid=1269903342#gid=1269903342) 
 
 # AmazingHand Enhanced advanced Demo
 To be released
