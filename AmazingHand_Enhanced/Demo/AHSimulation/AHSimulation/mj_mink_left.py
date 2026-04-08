@@ -1,20 +1,18 @@
 """Mujoco Client: This node is used to represent simulated robot, it can be used to read virtual positions, or can be controlled."""
 
 import argparse
-
 import os
 import time
-
-import mujoco
-import mujoco.viewer
-import pyarrow as pa
-from dora import Node
+from pathlib import Path
 
 import mink
+import mujoco
+import mujoco.viewer
+import numpy as np
+import pyarrow as pa
+from dora import Node
 from loop_rate_limiters import RateLimiter
 from mink.contrib import TeleopMocap
-from pathlib import Path
-import numpy as np
 
 ROOT_PATH = Path(os.path.dirname(os.path.abspath(__file__))).parent
 

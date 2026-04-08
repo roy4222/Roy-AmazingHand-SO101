@@ -3,10 +3,10 @@ import os
 import time
 
 import cv2
+import mediapipe as mp
 import numpy as np
 import pyarrow as pa
 from dora import Node
-import mediapipe as mp
 from scipy.spatial.transform import Rotation
 
 mp_drawing = mp.solutions.drawing_utils

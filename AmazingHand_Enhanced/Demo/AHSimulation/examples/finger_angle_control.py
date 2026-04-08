@@ -1,9 +1,9 @@
+import time
+
 import numpy as np
 import pyarrow as pa
 from dora import Node
-
 from scipy.spatial.transform import Rotation
-import time
 
 
 def main():
