@@ -1,0 +1,8 @@
+build_id: 019d6c5f-6132-7950-8092-12ee52b5d401
+session_id: 019d6c59-fceb-701f-9fc3-d99be45819e5
+git_sources: {}
+local_build:
+  node_working_dirs:
+    hand_tracker: /home/demo/dev/AmazingHand_original/Demo
+    l_hand_simulation: /home/demo/dev/AmazingHand_original/Demo
+    r_hand_simulation: /home/demo/dev/AmazingHand_original/Demo
