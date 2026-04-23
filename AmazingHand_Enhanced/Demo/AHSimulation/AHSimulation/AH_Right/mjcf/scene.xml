@@ -21,22 +21,22 @@
         <light pos="0 0 3.5" dir="0 0 -1" directional="true" />
         <geom name="floor" size="0 0 0.05" pos="0 0 0" type="plane" material="groundplane" />
 
-        <body name="finger1_target" pos="0.04838594 0.02402413 0.15888899" quat="0.84454864 -0.00166928  0.5354752  -0.001058" mocap="true">
+        <body name="finger1_target" pos="0.04838594 -0.02497587  0.15888899" quat="0.84454864 -0.00166928  0.5354752  -0.001058" mocap="true">
           <geom type="sphere" size=".01" contype="0" conaffinity="0" rgba="1 0. 0. .2"/>
         </body>
 
-        <body name="finger2_target" pos="0.04838594 -0.01469891  0.15248302" quat="0.84347869 0.04253325 0.53479657 0.02696767" mocap="true">
+        <body name="finger2_target" pos="0.04838595 0.01375227 0.15258249" quat="0.84330384 -0.04586726  0.53468597 -0.02908158" mocap="true">
           <geom type="sphere" size=".01" contype="0" conaffinity="0" rgba="1 0. 0. .2"/>
         </body>
 
-        <body name="finger3_target" pos="0.04838595 -0.05419646  0.14015328" quat="0.83889051 0.09760792 0.53188857 0.06188659" mocap="true">
+        <body name="finger3_target" pos="0.04838595 0.05327095 0.14037549" quat="0.8384983  -0.10092388  0.53163928 -0.06398944" mocap="true">
           <geom type="sphere" size=".01" contype="0" conaffinity="0" rgba="1 0. 0. .2"/>
         </body>
 
-        <body name="finger4_target" pos="0.08118535 0.04433619 0.08958578" quat="0.96133341 -0.03752578  0.21530506  0.16755184" mocap="true">
+        <body name="finger4_target" pos="0.08151079 -0.04344162  0.08958596" quat="0.96066438  0.03837579  0.21515213 -0.17134994" mocap="true">
           <geom type="sphere" size=".01" contype="0" conaffinity="0" rgba="1 0. 0. .2"/>
         </body>
-
+        
     </worldbody>
     <include file="keyframes.xml"/>
 </mujoco>

@@ -1,13 +1,13 @@
 {
     "configuration": "default",
     "documentId": "430ff184cf3dd9557aaff2be",
-    "documentMicroversion": "7ffba3130912fb4ec965935b",
+    "documentMicroversion": "8014554106584fd5bf47f3b6",
     "elementId": "bd399bf1860732c6c6a2ee45",
     "fullConfiguration": "default",
-    "id": "MQqv02Zo+viliBqmS",
+    "id": "MyQirKJjjvf0p1TMb",
     "isStandardContent": false,
-    "name": "Finger_Frame-2 <1>",
-    "partId": "R4BD",
+    "name": "Finger_Frame <4>",
+    "partId": "RkCD",
     "suppressed": false,
     "type": "Part"
 }
