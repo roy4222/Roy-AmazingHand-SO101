@@ -1,0 +1,7 @@
+# Python bytecode cache (bringup/ + sim/ scripts)
+__pycache__/
+*.pyc
+
+# regenerable IK artifacts (regenerate with sim/offline_ik.py)
+sim/ik_*.csv
+*.mp4

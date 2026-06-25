@@ -34,8 +34,14 @@ rsync -az ~/RoyBot/RoyBot-Lab/src/Roy-AmazingHand-SO101/bringup/ pi5:amazinghand
 ssh pi5 'cd ~/amazinghand/bringup && ~/amazinghand/.venv/bin/python bus_scan.py'
 # 某指回中位
 ssh pi5 'cd ~/amazinghand/bringup && AH_ID1=3 AH_ID2=4 AH_BRINGUP_ARM=1 ~/amazinghand/.venv/bin/python middlepos_set.py'
-# 某指開閉循環
+# 某指開閉循環（flexion）
 ssh pi5 'cd ~/amazinghand/bringup && AH_ID1=3 AH_ID2=4 AH_BRINGUP_ARM=1 ~/amazinghand/.venv/bin/python finger_cycle.py'
+# 整手自創手勢（(F,L) 模型，10 個依序）
+ssh pi5 'cd ~/amazinghand/bringup && AH_GESTURE=all AH_BRINGUP_ARM=1 ~/amazinghand/.venv/bin/python hand_show.py'
+# 比 ya + 左右搖（自創模型）
+ssh pi5 'cd ~/amazinghand/bringup && AH_GESTURE=victory AH_SWAY=45 AH_BRINGUP_ARM=1 ~/amazinghand/.venv/bin/python hand_show.py'
 ```
+
+> 動作模型（反向=彎曲、同向=左右）與 `(F,L)` 合成見 [`03-architecture.md`](03-architecture.md)；完整工具見 [`../bringup/README.md`](../bringup/README.md)。
 
 **停 / 釋放：關 5V 最可靠**（Ctrl-C 只中斷腳本，servo 會停在當下位置 hold）。
