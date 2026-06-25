@@ -4,4 +4,10 @@ __pycache__/
 
 # regenerable IK artifacts (regenerate with sim/offline_ik.py)
 sim/ik_*.csv
-*.mp4
+ik_*.mp4
+
+# source videos (commit compressed mp4 instead)
+*.mov
+
+# Windows alternate-data-stream metadata
+*:Zone.Identifier

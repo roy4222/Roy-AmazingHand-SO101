@@ -9,6 +9,13 @@ as an expressive hand, **not a gripper**).
 > Upstream design © Pollen Robotics. **Licensing preserved (see bottom).** This fork adds
 > bring-up evidence, tooling, and docs; it does **not** modify the mechanical design.
 
+## Demo
+
+[![AmazingHand right hand](IMG_1136.jpg)](IMG_1133.mp4)
+
+▶️ **[Demo video — whole-hand gestures on the real hand (IMG_1133.mp4)](IMG_1133.mp4)**
+(click to play on GitHub; the photo above also links to it).
+
 ---
 
 ## What this fork adds
