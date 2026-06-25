@@ -11,10 +11,10 @@ as an expressive hand, **not a gripper**).
 
 ## Demo
 
-[![AmazingHand right hand](IMG_1136.jpg)](IMG_1133.mp4)
+[![AmazingHand right hand](IMG_1136.jpg)](https://youtube.com/shorts/aFw_-3KJ2Zw)
 
-▶️ **[Demo video — whole-hand gestures on the real hand (IMG_1133.mp4)](IMG_1133.mp4)**
-(click to play on GitHub; the photo above also links to it).
+▶️ **[Demo video — whole-hand gestures on the real hand (YouTube Shorts)](https://youtube.com/shorts/aFw_-3KJ2Zw)**
+(the photo above also links to it).
 
 ---
 
